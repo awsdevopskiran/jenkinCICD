@@ -14,7 +14,7 @@ phases:
             - mvn --version
             - ls
             
-            - mvn clean install -f jenkinCICD/java-tomcat-sample/pom.xml
+            - mvn clean install -f java-tomcat-sample/pom.xml
     post_build:
         commands:
             - echo Entered the post_build phase..
