@@ -7,13 +7,13 @@ phases:
             - apt-get update -y
     pre_build:
         commands:
-            - jenkinCICD/java-tomcat-sample/pom.xml
+           
             - echo Entered the pre_build phase..
     build:
         commands:
             - mvn --version
             
-            - mvn clean install -f pom.xml
+            - mvn clean install -f jenkinCICD/java-tomcat-sample/pom.xml
     post_build:
         commands:
             - echo Entered the post_build phase..
