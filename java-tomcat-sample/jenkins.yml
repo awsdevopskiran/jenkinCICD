@@ -10,6 +10,7 @@ phases:
             - echo Entered the pre_build phase..
     build:
         commands:
+            - mvn --version
             - mvn clean install -f pom.xml
     post_build:
         commands:
